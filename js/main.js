@@ -29,6 +29,7 @@ elHeroForm.addEventListener("submit", function(evt){
     }
 
     if(!haveNumber){
+        elPhone.classList.remove("phone-ivalid");
         contacts.push(obj);
         elHeroForm.reset();
         elContactList.innerHTML = null;
