@@ -40,21 +40,25 @@ elHeroForm.addEventListener("submit", function(evt){
             const title = document.createElement("h3");
             const realation = document.createElement("p");
             const phonenumber = document.createElement("a");
-    
+            const delatebtn = document.createElement("button");
+
             item.classList.add("col-6");
             itembox.classList.add("rounded-3", "bg-info", "p-3");
             title.classList.add("text-white", "mb-3",);
             realation.classList.add("text-white", "mb-3",);
             phonenumber.classList.add("text-white","text-decoration-none");
+            delatebtn.classList.add("btn", "btn-danger", "d-block", "mt-3")
     
             title.textContent = contact.name;
             realation.textContent = contact.relationship;
             phonenumber.href = `tel: +${contact.phone}`;
             phonenumber.textContent = `Phone Number: +${contact.phone}`;
+            delatebtn.textContent = "Delate"
     
             itembox.appendChild(title);
             itembox.appendChild(realation);
             itembox.appendChild(phonenumber);
+            itembox.appendChild(delatebtn);
     
             item.appendChild(itembox)
     
