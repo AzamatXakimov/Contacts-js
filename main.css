@@ -1,0 +1,18 @@
+.hero-inner{
+    background: #fafafa;
+}
+
+
+.phone-ivalid{
+    border: 2px solid red;
+    color: red;
+}
+
+.invalid-text{
+    display: none;
+    color: red;
+}
+
+.phone-ivalid ~ .invalid-text{
+    display: block;
+}
